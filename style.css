@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(to right, #66bb6a, #43a047);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: #388e3c;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  display: block;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #2e7d32;
+  border-radius: 5px;
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #2e7d32;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.tabs button {
+  background: #e8f5e9;
+  border: 1px solid #ccc;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tabs button.ativo,
+.tabs button:hover {
+  background: #c8e6c9;
+}
+
+#conteudo-dica {
+  background: #ffffff;
+  border-left: 4px solid #4caf50;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+
+.img-container {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input, form textarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 0.8rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #388e3c;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #2e7d32;
+  color: white;
+  margin-top: 2rem;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Modal Popup */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.4s;
+}
+
+.popup-content img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #555;
+  cursor: pointer;
+}

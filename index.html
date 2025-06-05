@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conexão Verde: Agricultura Urbana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌱 Conexão Verde</h1>
+    <p>Transformando cidades com agricultura urbana e sustentabilidade 🌆</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="https://www.gov.br/mds/pt-br/acoes-e-programas/acesso-a-alimentos-e-a-agua/programa-nacional-de-agricultura-urbana-e-periurbana" target="_blank" rel="noopener">Sobre</a></li>
+      <li><a href="#dicas">Dicas</a></li>
+      <li><a href="#hortas">Hortas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="dicas" class="fade-in">
+      <h2>💡 Dicas Sustentáveis</h2>
+      <div class="tabs">
+        <button class="ativo" data-dica="1">Horta em Casa</button>
+        <button data-dica="2">Compostagem</button>
+        <button data-dica="3">Plantas Nativas</button>
+      </div>
+      <div id="conteudo-dica">
+        <p>Comece sua horta em pequenos vasos com ervas e temperos, ideal para apartamentos.</p>
+      </div>
+    </section>
+
+    <section id="hortas" class="fade-in">
+      <h2>🖼️ Hortas Comunitárias</h2>
+      <div class="grid">
+        <div class="img-container" data-index="0">
+          <img src="https://images.unsplash.com/photo-1615484477782-6d4493f19484?auto=format&fit=crop&w=800&q=80" alt="Horta no Telhado" />
+          <div class="caption">Horta no Telhado</div>
+        </div>
+        <div class="img-container" data-index="1">
+          <img src="https://images.unsplash.com/photo-1524594154907-7bdb56dc67f3?auto=format&fit=crop&w=800&q=80" alt="Comunidade Sustentável" />
+          <div class="caption">Comunidade Sustentável</div>
+        </div>
+        <div class="img-container" data-index="2">
+          <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=800&q=80" alt="Cultivo Vertical" />
+          <div class="caption">Cultivo Vertical</div>
+        </div>
+      </div>
+
+      <!-- Popup Modal -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <img id="popup-img" src="" alt="" />
+          <p id="popup-desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-tema" class="fade-in">
+      <h2>🌱 Agricultura Urbana e Sustentabilidade</h2>
+      <p>
+        A <strong>agricultura urbana</strong> é o cultivo de alimentos dentro das cidades, aproveitando quintais, telhados, praças, varandas e até calçadas para produzir alimentos frescos e saudáveis. Essa prática promove a <strong>sustentabilidade ambiental</strong>, melhora a qualidade de vida e fortalece comunidades.
+      </p>
+      <p>
+        Além de contribuir com a segurança alimentar, ela reduz a emissão de carbono, reutiliza resíduos orgânicos através da compostagem e traz mais verde para o ambiente urbano.
+      </p>
+      <p>
+        Iniciativas como hortas escolares, hortas comunitárias e projetos governamentais vêm ganhando espaço em diversas cidades brasileiras.
+        Você pode conhecer mais sobre essas ações acessando:
+        <ul>
+          <li><a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/meio_ambiente/hortas/" target="_blank">Hortas Urbanas em SP</a></li>
+          <li><a href="https://pt.wikipedia.org/wiki/Agricultura_urbana" target="_blank">Agricultura Urbana na Wikipédia</a></li>
+          <li><a href="https://agenciabrasil.ebc.com.br/geral/noticia/2022-04/agricultura-urbana-ganha-espaco-e-importancia-no-brasil" target="_blank">Notícia: Agricultura urbana no Brasil - Agência Brasil</a></li>
+        </ul>
+      </p>
+    </section>
+
+    <section id="contato" class="fade-in">
+      <h2>📬 Entre em Contato</h2>
+      <form>
+        <input type="text" name="nome" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu email" required />
+        <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Conexão Verde - Agricultura Urbana e Sustentabilidade</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
